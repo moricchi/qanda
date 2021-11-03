@@ -1,0 +1,15 @@
+current directory: /Users/yusukemorikawa/development/qanda/vender/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/yusukemorikawa/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20210906-96701-8jukao.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yusukemorikawa/development/qanda/vender/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/yusukemorikawa/development/qanda/vender/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/yusukemorikawa/development/qanda/vender/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210906-96701-1lb4pk1/bindex

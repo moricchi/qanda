@@ -1,0 +1,3 @@
+current directory: /Users/yusukemorikawa/development/qanda/vender/bundle/gems/mimemagic-0.3.10/ext/mimemagic
+/Users/yusukemorikawa/.rbenv/versions/2.5.1/bin/ruby -rrubygems /Users/yusukemorikawa/development/qanda/vender/bundle/gems/rake-12.3.1/exe/rake RUBYARCHDIR=/Users/yusukemorikawa/development/qanda/vender/bundle/extensions/x86_64-darwin-18/2.5.0/mimemagic-0.3.10 RUBYLIBDIR=/Users/yusukemorikawa/development/qanda/vender/bundle/extensions/x86_64-darwin-18/2.5.0/mimemagic-0.3.10
+mkdir -p /Users/yusukemorikawa/development/qanda/vender/bundle/extensions/x86_64-darwin-18/2.5.0/mimemagic-0.3.10/mimemagic

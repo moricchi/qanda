@@ -2,22 +2,22 @@
   <div class="col-md-12">
     <h2><%= @question.title %></h2>
     <div>
-      Content: <%= @question.content %>
+      内容: <%= @question.content %>
     </div>
     <div>
-      Name: <%= @question.name %>
+      名前: <%= @question.name %>
     </div>
     <hr>
-    
+
     <div>
-      <h3>Answers</h3>
+      <h3>回答</h3>
       <table class="table table-striped">
         <% if @question.answers.any? %>
           <thead class="thead-light">
             <tr>
-              <td>Answer</td>
-              <td>Name</td>
-              <td>Menu</td>
+              <td>回答</td>
+              <td>名前</td>
+              <td>メニュー</td>
             </tr>
           </thead>
           <tbody>
@@ -31,38 +31,38 @@
                 </td>
                 <td>
                   [<%= link_to 'Edit', edit_question_answer_path(@question, answer) %>]
-                  [<%= link_to 'Delete', question_answer_path(@question, answer), 
+                  [<%= link_to 'Delete', question_answer_path(@question, answer),
                     method: :delete, data:{ confirm: 'Are you sure?'} %> ]
                 </td>
               </tr>
             <% end %>
           </tbody>
         <% else %>
-          <p>No answer yet.</p>
+          <p>回答はまだありません</p>
         <% end %>
-        
+
       </table>
-      
+
     </div>
-    
-    <h3>Post new answer.</h3>
-    
+
+    <h3>新しい回答を投稿する</h3>
+
     <%= form_with model: [@question, @answer], local: true do |f| %>
       <%= f.hidden_field :question_id, { value: @question.id} %>
       <div class="form-group">
-        <label>Name</label>
+        <label>名前</label>
         <%= f.text_field :name, class: 'form-control' %>
       </div>
       <div class="form-group">
-        <label>Content</label>
+        <label>内容</label>
         <%= f.text_area :content, class: 'form-control' %>
       </div>
       <div class="text-center">
-        <%= f.submit "Post", class: 'btn btn-primary' %>
+        <%= f.submit "投稿", class: 'btn btn-primary' %>
       </div>
-      
+
     <% end %>
-    
+
     <div>
       <%= link_to '> Home', root_path %>
     </div>
